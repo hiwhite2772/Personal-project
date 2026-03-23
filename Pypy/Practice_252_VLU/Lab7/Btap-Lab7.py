@@ -3,16 +3,13 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 print(df)
 print()
-#2 - In ra 5 dòng đầu tiên của dữ liệu
+#2.1 - In ra 5 dòng đầu tiên của dữ liệu
 print(df.head())
+#2.2 - In ra 5 dòng cuối cùng của dữ liệu
+print(df.tail())
 print()
 #3 - Điểm trung bình theo 4 môn
-df["diem_tb"] = (
-    df["diem_toan"] + 
-    df["diem_ly"] + 
-    df["diem_hoa"] + 
-    df["diem_sinh"]
-) / 4
+df["diem_tb"] = (df["diem_toan"] + df["diem_ly"] + df["diem_hoa"] + df["diem_sinh"]) / 4
 print(round(df, 2))
 print()
 #4 - Xếp loại theo điểm trung bình
