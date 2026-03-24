@@ -8,7 +8,7 @@ class Tamgiac:
         while True:
             try:
                 self.a = float(input("Nhap a: "))
-                if self.a >= 0:
+                if self.a > 0:
                     break
                 print("Vui long nhap so duong")
             except ValueError:
@@ -17,7 +17,7 @@ class Tamgiac:
         while True:
             try:
                 self.b = float(input("Nhap b: "))
-                if self.b >= 0:
+                if self.b > 0:
                     break
                 print("Vui long nhap so duong")
             except ValueError:
@@ -26,7 +26,7 @@ class Tamgiac:
         while True:
             try:
                 self.c = float(input("Nhap c: "))
-                if self.c >= 0:
+                if self.c > 0:
                     break
                 print("Vui long nhap so duong")
             except ValueError:
@@ -45,6 +45,8 @@ class Tamgiac:
 
     def dientich(self):
         p = self.nuachuvi()
+        if self.a + self.b <= self.c or self.a + self.c <= self.b or self.b + self.c <= self.a:
+            return "Ba cạnh không thể tạo thành tam giác!"
         return math.sqrt(p * ((p - self.a) * (p - self.b) * (p - self.c)))
 
 tg = Tamgiac("", "", "")
