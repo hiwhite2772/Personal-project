@@ -1,0 +1,1 @@
+tong = sum(n)
