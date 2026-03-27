@@ -49,3 +49,5 @@ def main():
     print(S_de_quy(n))
     print(S_khu_de_quy(n))
 main()
+
+#4
