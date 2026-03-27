@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập 4</title>
+</head>
+<body>
+    <h1> BÀI 4: MÁY TÍNH ĐƠN GIẢN</h1>
+<pre>
+    Số A: <input type="text" id="a">
+
+    Số B: <input type="text" id="b">
+
+    <button onclick="tong()"> Tính tổng </button>
+    <h2 id="kq"> Kết quả hiển thị ở đây</h2>
+</pre>
+</body>
+</html>
+<script>
+    function tong() {
+        a=parseInt(document.getElementById("a").value)
+        b=parseInt(document.getElementById("b").value)
+        c=a+b;
+        text="Tổng của "+ a + " + " + b + " = " +c;
+        document.getElementById("kq").innerHTML=text;
+    }
+</script>
