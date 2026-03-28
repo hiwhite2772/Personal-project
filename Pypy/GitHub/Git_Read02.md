@@ -2,11 +2,12 @@
 
 ## Mục lục
 1. [Tải và cài Git](#1-tải-và-cài-git)
-2. [Giới thiệu GitHub](#2-giới-thiệu-github)
-3. [So sánh Git và GitHub](#3-so-sánh-git-và-github)
-4. [Git & GitHub dùng để làm gì?](#4-git--github-dùng-để-làm-gì)
-5. [Git & GitHub dành cho ai?](#5-git--github-dành-cho-ai)
-6. [Một số lệnh Git cơ bản](#6-một-số-lệnh-git-cơ-bản)
+2. [Cấu hình Git cơ bản](#-2-giới-thiệu-github)
+3. [Đăng ký GitHub](#3-đăng-ký-github)
+4. [Tạo repository trên GitHub](#4-tạo-repository-trên-github)
+5. [Kết nối Git local với GitHub](#5-kết-nối-git-local-với-github)
+6. [Quy trình làm việc cơ bản](#6-quy-trình-làm-việc-cơ-bản)
+7. [Một số tips](#7-một-số-tips)
 
 ## 1. Tải và cài Git
 
