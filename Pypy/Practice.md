@@ -35,7 +35,7 @@ Output: [0,1]
 
 ## 2. Palindrome Number – Số nguyên đối xứng
 
-**Mô tả:**
+**Mô tả:**  
 Cho một số nguyên x, trả về True nếu x là số đối xứng (đọc xuôi ngược giống nhau), ngược lại trả về False.
 
 **Ví dụ:**
@@ -54,7 +54,7 @@ Output: False
 
 ## 3. Arithmetic Progression – Mảng có thể thành cấp số cộng
 
-**Mô tả:**
+**Mô tả:**  
 Một dãy số được gọi là cấp số cộng nếu hiệu giữa hai phần tử liên tiếp luôn giống nhau.
 Cho một mảng arr, trả về True nếu có thể sắp xếp lại mảng để tạo thành cấp số cộng, ngược lại trả về False.
 
@@ -72,7 +72,7 @@ Output: False
 
 ## 4. Pivot Integer – Số nguyên chốt
 
-**Mô tả:**
+**Mô tả:**  
 Cho một số nguyên dương n, tìm số nguyên x sao cho:
 
 Tổng các số từ 1 đến x = Tổng các số từ x đến n
@@ -94,7 +94,7 @@ Output: -1
 
 ## 5. Ugly Number – Số xấu
 
-**Mô tả:**
+**Mô tả:**  
 Một số nguyên dương n được gọi là số xấu (ugly number) nếu chỉ có thừa số nguyên tố 2, 3, hoặc 5.
 
 Trả về True nếu n là số xấu, ngược lại False.
@@ -118,7 +118,7 @@ Output: True
 
 ## 6. Smallest Repunit Divisible by K – Số chỉ chứa 1 chia hết cho K
 
-**Mô tả:**
+**Mô tả:**  
 Cho số nguyên dương k, tìm số nguyên nhỏ nhất n chỉ chứa chữ số 1 sao cho n % k == 0.
 
 Trả về độ dài của n.
@@ -140,7 +140,7 @@ Output: -1
 
 ## 7. Self Dividing Numbers – Số tự chia hết
 
-**Mô tả:**
+**Mô tả:**  
 Một số nguyên dương n được gọi là tự chia hết nếu:
 
 Không chứa chữ số 0
@@ -156,3 +156,4 @@ Output: [1,2,3,4,5,6,7,8,9,11,12,15,22]
 Input: left = 47, right = 85
 Output: [48,55,66,77]
 ```
+

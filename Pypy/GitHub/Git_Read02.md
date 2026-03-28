@@ -1,132 +1,131 @@
+# Hướng dẫn tải và sử dụng Git & GitHub
 
-# ❓ 1. Xoá file trên GitHub → máy có tự xoá không?
+## Mục lục
+1. [Tải và cài Git](#1-tải-và-cài-git)
+2. [Giới thiệu GitHub](#2-giới-thiệu-github)
+3. [So sánh Git và GitHub](#3-so-sánh-git-và-github)
+4. [Git & GitHub dùng để làm gì?](#4-git--github-dùng-để-làm-gì)
+5. [Git & GitHub dành cho ai?](#5-git--github-dành-cho-ai)
+6. [Một số lệnh Git cơ bản](#6-một-số-lệnh-git-cơ-bản)
 
-👉 **KHÔNG tự động**
+## 1. Tải và cài Git
 
-Nếu bạn xoá file trên GitHub (web), thì:
-
-* GitHub: ✅ file bị xoá
-* Máy bạn: ❌ vẫn còn file cũ
-
----
-
-## ✅ Muốn đồng bộ về máy
-
-Bạn phải chạy:
-
+### 1.1 Windows
+1. Truy cập trang chính thức: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+2. Chọn Windows → tải `.exe`  
+3. Chạy file → nhấn `Next` theo mặc định (khuyến nghị để các option mặc định)  
+4. Kiểm tra cài đặt: mở **Command Prompt** hoặc **Git Bash**, gõ:
 ```bash
-git pull
+git --version
 ```
 
-👉 Lúc này:
-
-* Git sẽ kéo thay đổi từ GitHub về
-* File bị xoá trên web → sẽ bị xoá trên máy
+- Nếu ra phiên bản Git → cài thành công
 
 ---
 
-# ❓ 2. Xoá file trên máy → GitHub có tự xoá không?
+### 1.2 MacOS
 
-👉 **Cũng KHÔNG tự động**
-
-Bạn phải làm đủ 3 bước:
-
-```bash
-git add .
-git commit -m "delete file"
-git push
+1. Dùng Homebrew:  
+```base
+brew install git  
 ```
-
-👉 Sau đó:
-
-* GitHub mới xoá file đó
-
----
-
-# ❓ 3. Sửa code trên GitHub → máy có tự cập nhật không?
-
-👉 **KHÔNG tự động luôn**
-
-Bạn phải chạy:
-
-```bash
-git pull
-```
-
-👉 thì code mới trên GitHub mới về máy
-
----
-
-# 🧠 Tư duy đúng (cực kỳ quan trọng)
-
-👉 Git **KHÔNG phải Google Drive**
-
-Nó KHÔNG tự sync
-
----
-
-# 🔑 Quy tắc vàng
-
-| Hành động              | Cần làm    |
-| ---------------------- | ---------- |
-| Lấy code mới từ GitHub | `git pull` |
-| Đẩy code lên GitHub    | `git push` |
-
----
-
-# 🔥 Ví dụ dễ hiểu
-
-## Trường hợp 1:
-
-Bạn xoá file trên GitHub
-
-👉 máy bạn vẫn còn → chạy:
-
-```bash
-git pull
+2. Hoặc tải từ trang Git → cài như Windows  
+3. Kiểm tra:
+```base
+git --version
 ```
 
 ---
 
-## Trường hợp 2:
-
-Bạn sửa file trên máy
-
-👉 GitHub chưa có → chạy:
-
-```bash
-git add .
-git commit -m "update"
-git push
+### 1.3 Linux  
+1. Ubuntu/Debian:  
+```base
+sudo apt update  
+sudo apt install git  
+```
+2. Fedora:  
+```base
+sudo dnf install git  
+```
+3. Kiểm tra:  
+```base
+git --version  
 ```
 
 ---
 
-# ⚠️ Cảnh báo quan trọng
-
-👉 Nếu bạn:
-
-* sửa code trên máy
-* rồi lại `git pull`
-
-💥 Có thể bị **conflict**
-
----
-
-# 🚀 Thói quen chuẩn (rất nên làm)
-
-Mỗi lần code:
-
-```bash
-git pull
-# code
-git add .
-git commit -m "..."
-git push
+## 2. Cấu hình Git cơ bản
+Sau khi cài, cấu hình thông tin cá nhân để commit:
+```base
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```  
+Kiểm tra:
+```base
+git config --list
 ```
 
 ---
 
-# 🎯 Tóm lại 1 câu
+## 3. Đăng ký GitHub
+1. Truy cập: **https://github.com**
+2. Nhấn Sign up, điền email, username, password
+3. Xác thực email
+4. GitHub cung cấp repo miễn phí, public/private tùy nhu cầu
 
-> 🔑 Git chỉ đồng bộ khi bạn dùng `pull` hoặc `push` — không tự động
+---
+
+## 4. Tạo repository trên GitHub
+1. Đăng nhập → nhấn New repository
+2. Điền: 
+Repository name: my-project
+3. Public/Private
+4. Khởi tạo README (tuỳ chọn)
+5. Nhấn Create repository
+
+---
+
+## 5. Kết nối Git local với GitHub
+### 5.1 Clone repository từ GitHub
+- git clone **https://github.com/username/my-project.git**
+- Tạo folder my-project local → đồng bộ với GitHub
+### 5.2 Thêm remote cho repo local mới
+- git remote add origin **https://github.com/username/my-project.git**
+
+---
+
+## 6. Quy trình làm việc cơ bản
+1. Thêm file mới / chỉnh sửa
+```base
+git add file.txt
+```
+2. Commit thay đổi
+```base
+git commit -m "Mô tả thay đổi"
+```
+3. Đẩy code lên GitHub
+```base
+git push origin main
+```
+4. Lấy code mới từ GitHub
+```base
+git pull origin main
+```
+
+⚡ **Lưu ý:** tên nhánh mặc định có thể là main hoặc master tùy repo
+
+---
+
+## 7. Một số tips
+1. Dùng Git Bash hoặc Terminal để thao tác Git
+2. Commit thường xuyên → dễ quản lý
+3. Tạo branch cho mỗi tính năng / bugfix → tránh xung đột
+4. GitHub Desktop có giao diện trực quan nếu không muốn dùng terminal
+
+---
+
+### ✅ Kết luận
+- Cài Git → cấu hình username/email
+- Tạo repo GitHub → kết nối với local
+- Quy trình: add → commit → push → pull
+- Dùng branch và commit thường xuyên → quản lý code tốt
