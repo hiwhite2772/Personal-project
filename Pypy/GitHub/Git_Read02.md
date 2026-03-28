@@ -2,7 +2,7 @@
 
 ## Mục lục
 1. [Tải và cài Git](#1-tải-và-cài-git)
-2. [Cấu hình Git cơ bản](#-2-giới-thiệu-github)
+2. [Cấu hình Git cơ bản](#2-cấu-hình-git-cơ-bản)
 3. [Đăng ký GitHub](#3-đăng-ký-github)
 4. [Tạo repository trên GitHub](#4-tạo-repository-trên-github)
 5. [Kết nối Git local với GitHub](#5-kết-nối-git-local-với-github)
