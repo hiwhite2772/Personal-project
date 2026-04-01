@@ -2,11 +2,9 @@
 n = int(input("Nhap n = "))
 print("Day Fibonacci:", end=" ")
 a, b = 0, 1
-for __ in range(n):
+for _ in range(n):
     print(a, end=" ")
-    c = a + b
-    a = b 
-    b = c
+    a, b = b, a + b
 
 
 #Mã Giả:
@@ -16,7 +14,5 @@ for __ in range(n):
 #B4: a, b = 0, 1
 #B5: for i in range(n) 
 #B6: print(a, end=" ")
-#    c = a + b
-#    a = b 
-#    b = c
+#    a, b = b, a+b
 #B7: Kết thúc

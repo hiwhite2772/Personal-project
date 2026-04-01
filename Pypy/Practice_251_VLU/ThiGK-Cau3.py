@@ -1,15 +1,20 @@
 #Code
 n = int(input("Nhap so n = "))
+
 if n < 0:
     print("Khong hop le! Vui long nhap lai so nguyen duong.")
+
 tongchuso = 0
 sotam = n
+
 if sotam < 0:
     sotam = abs(sotam)
+
 while sotam > 0:
     chusocuoi = sotam % 10
     tongchuso += chusocuoi
     sotam //= 10
+
 print(f"Tong cac chu so cua {n} la: {tongchuso}")
 
 #Mã Giả:
