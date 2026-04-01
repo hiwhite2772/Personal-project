@@ -1,54 +1,29 @@
-def main():
-    try:
-        n = int(input())
-        if n <= 0:
-            print("Số phải lớn hơn 0")
-        else:
-            print("Số nguyên dương")
-    except ValueError:
-        print("Lỗi: phải nhập số")
-main()
+du_lieu = """Nguyen Van A, 7.5
+Le Thi B, 8
+Tran Minh K, 6.45
+To Hai N, 3
+Dang Ngoc T, 4"""
 
-def main2():
-    try:
-        numbers = [10, 20, 30, 40]
-        i = int(input())
-        gia_tri = numbers[i]
-        print(gia_tri)
-    except ValueError:
-        print("Phải nhập số!")
-    except IndexError:
-        print("Index không hợp lệ!")
-main2()
+with open("sinhvien.txt", "w") as f:
+    f.write(du_lieu)
 
-def main3():
-    try:
-        with open("demo.txt", "r") as file:
-            content = file.read()
-            print(content)
-    except FileNotFoundError:
-        print("Không tìm thấy file!")
-main3()
+print("\n=======Thong tin sinh vien=======")
+with open("sinhvien.txt", "r") as f:
+    for i in f:
+        i = i.strip()
+        if i:
+            ho_ten, diem = i.split(",")
+            print(f"{ho_ten}:{diem}")
 
-def main4():
-    data = ["10", "20", "abc", "40"]
-    total = 0
-    for i in data:
-        try:
-            num = int(i)
-            total += num
-        except ValueError:
-            pass
-    print("Tổng:", total)
-main4()
-
-def main5():
-    try:
-        pw = input()
-        if len(pw) < 6:
-            raise ValueError("Password quá ngắn")
-        else:
-            print("Password hợp lệ")
-    except ValueError as e:
-        print(e)
-main5()
+print("\n=======Sinh vien dat diem 5 tro len=======")
+with open("sinhvien.txt", "r") as fr:
+    with open("dau.txt", "w") as fw:
+        for dong in fr:
+            dong = dong.strip()
+            if dong:
+                ho_ten, diem = dong.split(",")
+                if float(diem) >= 5:
+                    fw.write(dong + "\n")
+                    print(f"{ho_ten}:{diem}")
+                    
+print("\nDa ghi vao file dau.txt thanh cong!")
