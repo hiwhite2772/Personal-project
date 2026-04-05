@@ -4,7 +4,7 @@ for _ in range(t):
     n = int(input("Nhập số ngày: "))
     print("Sau khi đã chạy số km:", n*(n+1)//2)
 
-#Dệ quy
+#Công thức truy đồi - đệ quy
 def tong(n):
     if n == 1:
         return 1

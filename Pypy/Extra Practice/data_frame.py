@@ -8,7 +8,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-print(df)
+print(df)  #In ra màn hình
 print()
 
 print(df.head(3))  #In 3 dòng phần tử đầu tiên
