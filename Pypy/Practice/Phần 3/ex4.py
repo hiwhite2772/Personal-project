@@ -1,7 +1,7 @@
 # Đề hỏi: mỗi dòng cách từng số mà không phải đọc 1 dòng các số cách nhau.
 try:
     with open("input.txt", "r") as f:
-        #Đây đọc mỗi đọc từng số đó.
+        #Đây đọc mỗi dòng từng số đó.
         data = [int(line.strip()) for line in f]
         print(data)
 
