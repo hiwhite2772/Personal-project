@@ -9,11 +9,11 @@
 ---
 
 ## 2. Đệ quy và khử đệ quy
-#### Bài 1: Hãy cài đặt hàm đệ quy: Tính S(n) = 1 + 2 + 3 + … + n  
-#### Bài 2: Hãy cài đặt hàm đệ quy tính: T(n) = n! = 1 x 2 x 3 x … x n. Trong đó T(0) = 1  
-#### Bài 3: Hãy cài đặt hàm đệ quy: Tính S(n) = ½ + ¼ + … + 1/2n  
-#### Bài 4: Hãy cài đặt hàm đệ quy: Tính S(n) = x^2 + x^4 +… + x^2n  
-#### Bài 5: Hãy cài đặt hàm đệ quy tính tích các chữ số lẻ của số nguyên dương n  
+#### Bài 1: Hãy cài đặt hàm đệ quy: Tính S(n) = 1 + 2 + 3 + … + (n).  
+#### Bài 2: Hãy cài đặt hàm đệ quy: Tính T(n) = n! = 1 x 2 x 3 x … x (n). Trong đó T(0) = 1  
+#### Bài 3: Hãy cài đặt hàm đệ quy: Tính S(n) = 1/2 + 1/4 + … + 1/(2*n).  
+#### Bài 4: Hãy cài đặt hàm đệ quy: Tính S(n) = x^2 + x^4 + … + x^(2*n).  
+#### Bài 5: Hãy cài đặt hàm đệ quy tính tích các chữ số lẻ của số nguyên dương n.  
 #### *Hãy cài đặt các hàm khử đệ quy cho các bài toán trên*  
 
 ---
