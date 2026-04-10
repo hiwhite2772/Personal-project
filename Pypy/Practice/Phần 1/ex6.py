@@ -78,14 +78,21 @@ def la_so_nguyen_to(n):
     return True
 
 def tim_so_nguyen_to(lst):
+    #Danh sách rỗng
     kq = []
+
+    #Đếm số nguyên tố
     count = 0
     for i in lst:
         if la_so_nguyen_to(i):
+            #Đã thêm vào danh sách nếu tìm được số nguyên tố đó
             kq.append(i)
             count += 1
+
+    #Sắp xếp theo thứ tự tăng dần của số nguyên tố
     kq.sort()
 
+    #Xuất ra số đếm và sắp xếp số đó.
     return count, kq
 
 def main():
