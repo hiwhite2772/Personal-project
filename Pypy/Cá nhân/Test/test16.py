@@ -1,22 +1,36 @@
-class Library:
-    def __init__(self, name, title, total_books):
+class NhanVien:
+    def __init__ (self, name="", age=0, address="", salary=0, total_working_hours=0):
         self.name = name
-        self.title = title
-        self.total_books = total_books
-    def borrowBook(self, book):
-        self.total_books -= book
-        print(f"Đã mượn bộ sách: {book}")
-    def returnBook(self, book):
-        if book > self.total_books:
-            print("Không đủ bộ quyển sách!")
+        self.age = age
+        self.address = address
+        self.salary = salary
+        self.total_working_hours = total_working_hours
+    
+    def inputInfo(self):
+        self.name = input("Nhap ho va ten: ")
+        self.age = int(input("Nhap tuoi: "))
+        self.address = input("Nhap dia chi: ")
+        self.salary = int(input("Nhap so tien luong: "))
+        self.total_working_hours = int(input("Nhap tong so gio lam: "))
+    
+    def printInfo(self):
+        print("\n\t-----Thong tin nhan vien-----\n")
+        print(f"Ho va ten: {self.name}")
+        print(f"Tuoi: {self.age}")
+        print(f"Dia chi: {self.address}")
+        print(f"Tien luong: {self.salary}")
+        print(f"Tong so gio lam: {self.total_working_hours}")
+        print(f"So tien thuong: {dilam.tinhThuong()}")
+
+    def tinhThuong(self):
+        if self.total_working_hours >= 200:
+            bone = self.salary * 0.2
+        elif 100 <= self.total_working_hours < 200:
+            bone = self.salary * 0.1
         else:
-            self.total_books += book
-            print(f"Đã trả bộ sách: {book}")
-    def showInfo(self):
-        print(f"Tên: {self.name}")
-        print(f"Tên tiêu đề: {self.title}")
-        print(f"Hiện dư bộ quyển sách: {self.total_books}")
-Account = Library("White", "Golden", 15)
-Account.borrowBook(5)
-Account.returnBook(6)
-Account.showInfo()
+            bone = 0
+        return bone
+
+dilam = NhanVien()
+dilam.inputInfo()
+dilam.printInfo()
