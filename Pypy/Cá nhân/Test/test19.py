@@ -1,58 +1,57 @@
-class Student:
-    def __init__(self, mssv="", dtb=0.0, tuoi=0, lop=""):
-        self.mssv = mssv
-        self.dtb = dtb
-        self.tuoi = tuoi
-        self.lop = lop
-
+import math
+class Tamgiac:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
     def inputInfo(self):
-
         while True:
-            self.mssv = input("Nhập mã sinh viên: ")
-            if len(self.mssv) == 8:
-                break
-            print("Vui lòng nhập mã sinh viên đủ 8 ký tự!")
+            try:
+                self.a = float(input("Nhap a: "))
+                if self.a > 0:
+                    break
+                print("Vui long nhap so duong")
+            except ValueError:
+                print("Khong hop le!")
 
         while True:
             try:
-                self.dtb = float(input("Nhập điểm trung bình: "))
-                if 0.0 <= self.dtb <= 10.0:
+                self.b = float(input("Nhap b: "))
+                if self.b > 0:
                     break
-                print("Vui lòng nhập điểm số từ 0.0 đến 10.0")
+                print("Vui long nhap so duong")
             except ValueError:
-                print("Vui lòng nhập điểm số!")
-
-        while True:  
-            try:
-                self.tuoi = int(input("Nhập số tuổi: "))
-                if self.tuoi >= 18:
-                    break
-                print("Vui lòng đủ 18 tuổi trở lên!")
-            except ValueError:
-                print("Vui lòng nhập số tuổi!")
+                print("Khong hop le!")
 
         while True:
-            self.lop = input("Nhập tên lớp: ")
-            if self.lop and self.lop[0].upper() in ["A", "C"]:
-                break                
-            print(f"Tên lớp không hợp lệ.")
+            try:
+                self.c = float(input("Nhap c: "))
+                if self.c > 0:
+                    break
+                print("Vui long nhap so duong")
+            except ValueError:
+                print("Khong hop le!")
 
-    def showInfo(self):
-        print("\n------Thông tin sinh viên------")
-        print(f"Mã sinh viên: {self.mssv}")
-        print(f"Điểm trung bình: {self.dtb}")
-        print(f"Tuổi: {self.tuoi}")
-        print(f"Lớp: {self.lop}")
+    def printInfo(self):
+        print(f"a = {self.a}")
+        print(f"b = {self.b}")
+        print(f"c = {self.c}")
 
-    def hocbong(self):
-        if self.dtb >= 8.0:
-            return "Bạn nhận được học bổng!"
-        return "Bạn chưa đủ điều kiện học bổng"
+    def chuvi(self):
+        return self.a + self.b + self.c
 
-sinhvien = Student()
-sinhvien.inputInfo()
-sinhvien.showInfo()
+    def nuachuvi(self):
+        return self.chuvi() / 2
 
-print("\n------Thông báo------")
-print(sinhvien.hocbong())
-print()
+    def dientich(self):
+        p = self.nuachuvi()
+        if self.a + self.b <= self.c or self.a + self.c <= self.b or self.b + self.c <= self.a:
+            return "Ba cạnh không thể tạo thành tam giác!"
+        return math.sqrt(p * ((p - self.a) * (p - self.b) * (p - self.c)))
+
+tg = Tamgiac("", "", "")
+tg.inputInfo()
+tg.printInfo()
+print("Chu vi:", tg.chuvi())
+print("Nua chu vi:", tg.nuachuvi())
+print("Dien tich:", tg.dientich())
