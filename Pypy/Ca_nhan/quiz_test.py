@@ -76,9 +76,9 @@ Thay dòng `guess = input(...).upper()` bằng vòng `while True` với logic:
 
 Ví dụ khi chạy:
 Nhập chọn 1 đáp án (A/B/C/D): x
-⚠️  Vui lòng chỉ nhập A, B, C hoặc D!
+-> Vui lòng chỉ nhập A, B, C hoặc D!
 Nhập chọn 1 đáp án (A/B/C/D): 5
-⚠️  Vui lòng chỉ nhập A, B, C hoặc D!
+->  Vui lòng chỉ nhập A, B, C hoặc D!
 Nhập chọn 1 đáp án (A/B/C/D): A
 Chính xác!
 

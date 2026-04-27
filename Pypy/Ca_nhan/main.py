@@ -25,13 +25,13 @@ else:
     print("Login failed!")
 
 #4
-diem = float(input("Nhập điểm lần 1 của bạn: "))
-if diem >=5:
-    diem_moi = diem + 2
+diem_lan1 = float(input("Nhập điểm lần 1 của bạn: "))
+if diem_lan1 >=5:
+    diem_lan2 = diem_lan1 + 2
 else:
-    diem_moi = diem + 5
-diem_chinh = round(min(diem_moi, 10), 1)
-print("Điểm lần 2 của bạn là:", diem_chinh)
+    diem_lan2 = diem_lan1 + 5
+diem_chinh_thuc = round(min(diem_lan2, 10), 1)
+print("Điểm lần 2 của bạn là:", diem_chinh_thuc)
 
 #5
 #Greatest Common Divisor - Phân số
