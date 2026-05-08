@@ -13,7 +13,7 @@ def so_fibonacci(x):
         return a
     if x == 1:
         return b
-    for i in range(2, n+1, 1):
+    for _ in range(2, n+1):
         c = a + b
         a = b
         b = c
@@ -34,7 +34,7 @@ def dec_to_binary(n2):
     result = ""
     while n2 != 0:
         result = str(n2%2)+result
-        n2 = n2//2
+        n2 //= 2
     return result
 def main():
     n1 = int(input("Nhập số cho đệ quy = "))

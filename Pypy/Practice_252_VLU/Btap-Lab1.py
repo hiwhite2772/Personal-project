@@ -70,7 +70,6 @@ def trung_binh_cong(a, b):
     return tbc
 print(trung_binh_cong(1, 4)) # 2.5
 # (1 + 2 + 3 + 4)/4 = 10/4
-# #--Em không biết làm này, em làm ý tưởng cấu trúc này.--
 
 #Bài 8
 #--Em không biết làm này.--
