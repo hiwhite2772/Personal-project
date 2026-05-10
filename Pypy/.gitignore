@@ -1,0 +1,20 @@
+# cache
+__pycache__/
+*.pyc
+
+# virtual environment
+venv/
+.venv/
+
+# vscode
+.vscode/
+
+# build
+build/
+dist/
+
+# env
+.env
+
+# jupyter
+.ipynb_checkpoints/
