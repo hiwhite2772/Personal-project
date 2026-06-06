@@ -1,4 +1,54 @@
 from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.DiGraph()
+
+edges = [
+    (0,1),
+    (0,2),
+    (1,3),
+    (1,4),
+    (2,4),
+    (3,5),
+    (4,5),
+    (4,6),
+    (5,7),
+    (5,8)
+]
+
+G.add_edges_from(edges)
+
+pos = {
+    0:(0,4),
+
+    1:(-1,3),
+    2:(1,3),
+
+    3:(-1.5,2),
+    4:(0,2),
+
+    5:(0,1),
+    6:(1,1),
+
+    7:(-0.5,0),
+    8:(0.5,0)
+}
+
+plt.figure(figsize=(8,6))
+
+nx.draw(
+    G,
+    pos,
+    with_labels=True,
+    arrows=True,
+    node_size=2000,
+    font_size=12
+)
+
+plt.title("Directed Graph - BFS Example")
+plt.show()
+
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
@@ -35,21 +85,3 @@ if __name__ == "__main__":
     print("BFS - duyet tim kiem bat dau tu dinh 0")
     g.BFS(0)
 
-"""
-Ve do thi
-
-0
-|-- 1 
-|   |-- 4 
-|   |
-|   |-- 5
-|
-|-- 3
-|   |-- 6
-|   |   |-- 8
-|   |
-|   |-- 7
-|
-|-- 2
-
-"""

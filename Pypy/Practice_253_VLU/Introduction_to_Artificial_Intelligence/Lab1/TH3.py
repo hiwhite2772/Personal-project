@@ -1,4 +1,46 @@
 from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.Graph()
+
+edges = [
+    (0,1),
+    (0,2),
+    (2,4),
+    (1,4),
+    (1,3),
+    (3,4),
+    (3,5),
+    (4,5)
+]
+
+G.add_edges_from(edges)
+
+pos = {
+    0:(0,3),
+
+    1:(-1,2),
+    2:(1,2),
+
+    3:(-1,1),
+    4:(0,1),
+
+    5:(0,0)
+}
+
+plt.figure(figsize=(6,5))
+
+nx.draw(
+    G,
+    pos,
+    with_labels=True,
+    node_size=2000
+)
+
+plt.title("Graph for DFS")
+plt.show()
+
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
@@ -36,17 +78,3 @@ if __name__ == "__main__":
     g.addEdge(4, 5)
     print("DFS - Duyet tim kiem tu dinh 0")
     g.DFS(0)
-
-"""
-Ve do thi
-
-0
-|-- 1 
-|   |-- 3
-|   |   |-- 5
-|   |
-|   |-- 4
-|
-|-- 2
-
-"""
