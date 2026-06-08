@@ -4,59 +4,38 @@ import matplotlib.pyplot as plt
 
 G = nx.Graph()
 
-edges = [
-    (0,1),
-    (0,2),
-    (2,4),
-    (1,4),
-    (1,3),
-    (3,4),
-    (3,5),
-    (4,5)
-]
+edges = [(0, 1), (0, 2), (0, 3), (1, 4), (3, 5)]
 
 G.add_edges_from(edges)
 
-pos = {
-    0:(0,3),
+pos = {0: (0, 3), 1: (-1, 2), 2: (0, 2), 3: (1, 2), 4: (-1, 1), 5: (1, 1)}
 
-    1:(-1,2),
-    2:(1,2),
+plt.figure(figsize=(6, 5))
 
-    3:(-1,1),
-    4:(0,1),
-
-    5:(0,0)
-}
-
-plt.figure(figsize=(6,5))
-
-nx.draw(
-    G,
-    pos,
-    with_labels=True,
-    node_size=2000
-)
+nx.draw(G, pos, with_labels=True, node_size=2000)
 
 plt.title("Graph for DFS")
 plt.show()
 
+
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
-    
+
     def addEdge(self, u, v):
         self.graph[u].append(v)
-    
+
     def DFSUtil(self, v, visited):
         visited[v] = True
-        print(v, end=' ')
+        print(v, end=" ")
         for i in self.graph[v]:
             if visited[i] == False:
                 self.DFSUtil(i, visited)
+
     def DFS(self, v):
-        visited = [False] * (max(self.graph)+1)
+        visited = [False] * (max(self.graph) + 1)
         self.DFSUtil(v, visited)
+
 
 if __name__ == "__main__":
     g = Graph()
