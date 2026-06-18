@@ -1,0 +1,5 @@
+print("Kính chào quý Thầy/Cô\nEm là sinh viên khoa CNTT- VLU")
+print("Khoá: K31")
+print("MSSV: 2574802010111")
+print("Họ và tên: Nguyễn Quang Huy\nĐang học lớp thực hành CSLT 01")
+print("Mơ ước của em là\thọc tập giỏi tốt nghiệp đúng hạn.")
