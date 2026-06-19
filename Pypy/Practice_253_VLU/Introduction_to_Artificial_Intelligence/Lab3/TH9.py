@@ -1,6 +1,6 @@
 import string
 def check_common_password(password):
-    with open("password.txt", "r") as f:
+    with open("passwords.txt", "r") as f:
         common = f.read().splitlines()
     if password in common:
         return True
@@ -9,7 +9,7 @@ def password_strength(password):
     score = 0
     length = len(password)
     upper_case = any(c.isupper() for c in password)
-    lower_case = any(c.lower() for c in password)
+    lower_case = any(c.islower() for c in password)
     special = any(c in string.punctuation for c in password)
     digits = any(c.isdigit() for c in password)
 
