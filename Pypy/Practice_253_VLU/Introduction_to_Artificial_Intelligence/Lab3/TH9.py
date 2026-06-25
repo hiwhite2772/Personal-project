@@ -1,10 +1,14 @@
 import string
+
+
 def check_common_password(password):
     with open("passwords.txt", "r") as f:
         common = f.read().splitlines()
     if password in common:
         return True
     return False
+
+
 def password_strength(password):
     score = 0
     length = len(password)
@@ -33,16 +37,17 @@ def password_strength(password):
     else:
         return "Strong", score
 
+
 def feedback(password):
     if check_common_password(password):
-        return "Password was found in a common list. Score 0/7"
+        return "Password was found in a common list. Score 0/8"
     strength, score = password_strength(password)
-    feedback = f"Password strength: {strength} (Score: {score}/7)\n"
+    feedback = f"Password strength: {strength} (Score: {score}/8 )\n"
     if score < 4:
         feedback += "Suggestions to improve your password:\n"
 
         if len(password) <= 8:
-            feedback += "- Make your password longer (more than 8 character). \n"
+            feedback += "- Make your password longer (more than 8 character).\n"
         if not any(c.isupper() for c in password):
             feedback += "- Include uppercase letters.\n"
         if not any(c.islower() for c in password):
@@ -52,5 +57,7 @@ def feedback(password):
         if not any(c.isdigit() for c in password):
             feedback += "- Add numbers.\n"
     return feedback
+
+
 password = input("Enter the password: ")
 print(feedback(password))
