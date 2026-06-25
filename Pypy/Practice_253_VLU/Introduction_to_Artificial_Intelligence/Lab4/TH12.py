@@ -6,9 +6,9 @@ plt.rc("image", cmap="magma")
 
 kernel = tf.constant([[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]])
 
-image = tf.io.read_file("me.jpg")
+image = tf.io.read_file("boy3.jpg")
 image = tf.io.decode_jpeg(image, channels=1)
-image = tf.image.resize(image, size=[600, 450])
+image = tf.image.resize(image, size=[600, 650])
 
 img = tf.squeeze(image).numpy()
 plt.figure(figsize=(5, 5))

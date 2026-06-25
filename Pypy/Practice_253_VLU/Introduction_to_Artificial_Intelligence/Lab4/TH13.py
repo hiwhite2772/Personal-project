@@ -79,7 +79,7 @@ def pooling_layer(maps, size=2, step=2):
     return pooling_image
 
 
-input_image = Image.open("me.jpg")
+input_image = Image.open("boy3.jpg")
 image_np = np.array(input_image)
 print(image_np.shape)
 print(np.array_equal(image_np[:, :, 0], image_np[:, :, 1]))
