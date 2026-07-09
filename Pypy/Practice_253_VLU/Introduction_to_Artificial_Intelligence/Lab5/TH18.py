@@ -51,7 +51,7 @@ def checkWinner():
     global win
     win = False
     if (
-button1["text"] == "X"
+        button1["text"] == "X"
         and button2["text"] == "X"
         and button3["text"] == "X"
         and button4["text"] == "X"
@@ -69,7 +69,7 @@ button1["text"] == "X"
         disableButtons()
         start()
     elif (
-button7["text"] == "X"
+        button7["text"] == "X"
         and button8["text"] == "X"
         and button9["text"] == "X"
         and button10["text"] == "X"
@@ -87,7 +87,7 @@ button7["text"] == "X"
         disableButtons()
         start()
     elif (
-button13["text"] == "X"
+        button13["text"] == "X"
         and button14["text"] == "X"
         and button15["text"] == "X"
         and button16["text"] == "X"
@@ -105,7 +105,7 @@ button13["text"] == "X"
         disableButtons()
         start()
     elif (
-button19["text"] == "X"
+        button19["text"] == "X"
         and button20["text"] == "X"
         and button21["text"] == "X"
         and button22["text"] == "X"
@@ -123,7 +123,7 @@ button19["text"] == "X"
         disableButtons()
         start()
     elif (
-button25["text"] == "X"
+        button25["text"] == "X"
         and button26["text"] == "X"
         and button27["text"] == "X"
         and button28["text"] == "X"
@@ -141,7 +141,7 @@ button25["text"] == "X"
         disableButtons()
         start()
     elif (
-button31["text"] == "X"
+        button31["text"] == "X"
         and button32["text"] == "X"
         and button33["text"] == "X"
         and button34["text"] == "X"
@@ -159,7 +159,7 @@ button31["text"] == "X"
         disableButtons()
         start()
     elif (
-button1["text"] == "X"
+        button1["text"] == "X"
         and button7["text"] == "X"
         and button13["text"] == "X"
         and button19["text"] == "X"
@@ -177,7 +177,7 @@ button1["text"] == "X"
         disableButtons()
         start()
     elif (
-button2["text"] == "X"
+        button2["text"] == "X"
         and button8["text"] == "X"
         and button14["text"] == "X"
         and button20["text"] == "X"
@@ -195,7 +195,7 @@ button2["text"] == "X"
         disableButtons()
         start()
     elif (
-button3["text"] == "X"
+        button3["text"] == "X"
         and button9["text"] == "X"
         and button15["text"] == "X"
         and button21["text"] == "X"
@@ -213,7 +213,7 @@ button3["text"] == "X"
         disableButtons()
         start()
     elif (
-button4["text"] == "X"
+        button4["text"] == "X"
         and button10["text"] == "X"
         and button16["text"] == "X"
         and button22["text"] == "X"
@@ -231,7 +231,7 @@ button4["text"] == "X"
         disableButtons()
         start()
     elif (
-button5["text"] == "X"
+        button5["text"] == "X"
         and button11["text"] == "X"
         and button17["text"] == "X"
         and button23["text"] == "X"
@@ -249,7 +249,7 @@ button5["text"] == "X"
         disableButtons()
         start()
     elif (
-button6["text"] == "X"
+        button6["text"] == "X"
         and button12["text"] == "X"
         and button18["text"] == "X"
         and button24["text"] == "X"
@@ -267,7 +267,7 @@ button6["text"] == "X"
         disableButtons()
         start()
     elif (
-button1["text"] == "X"
+        button1["text"] == "X"
         and button8["text"] == "X"
         and button15["text"] == "X"
         and button22["text"] == "X"
@@ -285,7 +285,7 @@ button1["text"] == "X"
         disableButtons()
         start()
     elif (
-button6["text"] == "X"
+        button6["text"] == "X"
         and button11["text"] == "X"
         and button16["text"] == "X"
         and button21["text"] == "X"
@@ -304,7 +304,7 @@ button6["text"] == "X"
         start()
 
     if (
-button1["text"] == "O"
+        button1["text"] == "O"
         and button2["text"] == "O"
         and button3["text"] == "O"
         and button4["text"] == "O"
@@ -322,7 +322,7 @@ button1["text"] == "O"
         disableButtons()
         start()
     elif (
-button7["text"] == "O"
+        button7["text"] == "O"
         and button8["text"] == "O"
         and button9["text"] == "O"
         and button10["text"] == "O"
@@ -340,7 +340,7 @@ button7["text"] == "O"
         disableButtons()
         start()
     elif (
-button13["text"] == "O"
+        button13["text"] == "O"
         and button14["text"] == "O"
         and button15["text"] == "O"
         and button16["text"] == "O"
@@ -358,7 +358,7 @@ button13["text"] == "O"
         disableButtons()
         start()
     elif (
-button19["text"] == "O"
+        button19["text"] == "O"
         and button20["text"] == "O"
         and button21["text"] == "O"
         and button22["text"] == "O"
@@ -376,7 +376,7 @@ button19["text"] == "O"
         disableButtons()
         start()
     elif (
-button25["text"] == "O"
+        button25["text"] == "O"
         and button26["text"] == "O"
         and button27["text"] == "O"
         and button28["text"] == "O"
@@ -394,7 +394,7 @@ button25["text"] == "O"
         disableButtons()
         start()
     elif (
-button31["text"] == "O"
+        button31["text"] == "O"
         and button32["text"] == "O"
         and button33["text"] == "O"
         and button34["text"] == "O"
@@ -412,7 +412,7 @@ button31["text"] == "O"
         disableButtons()
         start()
     elif (
-button1["text"] == "O"
+        button1["text"] == "O"
         and button7["text"] == "O"
         and button13["text"] == "O"
         and button19["text"] == "O"
@@ -430,7 +430,7 @@ button1["text"] == "O"
         disableButtons()
         start()
     elif (
-button2["text"] == "O"
+        button2["text"] == "O"
         and button8["text"] == "O"
         and button14["text"] == "O"
         and button20["text"] == "O"
@@ -448,7 +448,7 @@ button2["text"] == "O"
         disableButtons()
         start()
     elif (
-button3["text"] == "O"
+        button3["text"] == "O"
         and button9["text"] == "O"
         and button15["text"] == "O"
         and button21["text"] == "O"
@@ -466,7 +466,7 @@ button3["text"] == "O"
         disableButtons()
         start()
     elif (
-button4["text"] == "O"
+        button4["text"] == "O"
         and button10["text"] == "O"
         and button16["text"] == "O"
         and button22["text"] == "O"
@@ -484,7 +484,7 @@ button4["text"] == "O"
         disableButtons()
         start()
     elif (
-button5["text"] == "O"
+        button5["text"] == "O"
         and button11["text"] == "O"
         and button17["text"] == "O"
         and button23["text"] == "O"
@@ -502,7 +502,7 @@ button5["text"] == "O"
         disableButtons()
         start()
     elif (
-button6["text"] == "O"
+        button6["text"] == "O"
         and button12["text"] == "O"
         and button18["text"] == "O"
         and button24["text"] == "O"
@@ -520,7 +520,7 @@ button6["text"] == "O"
         disableButtons()
         start()
     elif (
-button1["text"] == "O"
+        button1["text"] == "O"
         and button8["text"] == "O"
         and button15["text"] == "O"
         and button22["text"] == "O"
@@ -538,7 +538,7 @@ button1["text"] == "O"
         disableButtons()
         start()
     elif (
-button6["text"] == "O"
+        button6["text"] == "O"
         and button11["text"] == "O"
         and button16["text"] == "O"
         and button21["text"] == "O"
@@ -588,42 +588,330 @@ def start():
 
     clicked = True
     count = 0
-    button1 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button1))
-    button2 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button2))
-    button3 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button3))
-    button4 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button4))
-    button5 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button5))
-    button6 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button6))
-    button7 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button7))
-    button8 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button8))
-    button9 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button9))
-    button10 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button10))
-    button11 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button11))
-    button12 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button12))
-    button13 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button13))
-    button14 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button14))
-    button15 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button15))
-    button16 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button16))
-    button17 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button17))
-    button18 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button18))
-    button19 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button19))
-    button20 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button20))
-    button21 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button21))
-    button22 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button22))
-    button23 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button23))
-    button24 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button24))
-    button25 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button25))
-    button26 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button26))
-    button27 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button27))
-    button28 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button28))
-    button29 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button29))
-    button30 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button30))
-    button31 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button31))
-    button32 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button32))
-    button33 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button33))
-    button34 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button34))
-    button35 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button35))
-    button36 = Button(root, text=" ", font=("Cambria", 20), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button36))
+    button1 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button1),
+    )
+    button2 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button2),
+    )
+    button3 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button3),
+    )
+    button4 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button4),
+    )
+    button5 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button5),
+    )
+    button6 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button6),
+    )
+    button7 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button7),
+    )
+    button8 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button8),
+    )
+    button9 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button9),
+    )
+    button10 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button10),
+    )
+    button11 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button11),
+    )
+    button12 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button12),
+    )
+    button13 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button13),
+    )
+    button14 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button14),
+    )
+    button15 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button15),
+    )
+    button16 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button16),
+    )
+    button17 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button17),
+    )
+    button18 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button18),
+    )
+    button19 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button19),
+    )
+    button20 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button20),
+    )
+    button21 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button21),
+    )
+    button22 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button22),
+    )
+    button23 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button23),
+    )
+    button24 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button24),
+    )
+    button25 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button25),
+    )
+    button26 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button26),
+    )
+    button27 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button27),
+    )
+    button28 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button28),
+    )
+    button29 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button29),
+    )
+    button30 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button30),
+    )
+    button31 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button31),
+    )
+    button32 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button32),
+    )
+    button33 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button33),
+    )
+    button34 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button34),
+    )
+    button35 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button35),
+    )
+    button36 = Button(
+        root,
+        text=" ",
+        font=("Cambria", 15),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button36),
+    )
 
     button1.grid(row=0, column=0)
     button2.grid(row=0, column=1)

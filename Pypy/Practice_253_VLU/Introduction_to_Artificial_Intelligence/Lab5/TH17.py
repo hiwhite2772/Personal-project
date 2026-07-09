@@ -456,32 +456,231 @@ def start():
 
     clicked = True
     count = 0
-    button1 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button1))
-    button2 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button2))
-    button3 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button3))
-    button4 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button4))
-    button5 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button5))
-    button6 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button6))
-    button7 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button7))
-    button8 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button8))
-    button9 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button9))
-    button10 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button10))
-    button11 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button11))
-    button12 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button12))
-    button13 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button13))
-    button14 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button14))
-    button15 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button15))
-    button16 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button16))
-    button17 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button17))
-    button18 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button18))
-    button19 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button19))
-    button20 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button20))
-    button21 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button21))
-    button22 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button22))
-    button23 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button23))
-    button24 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button24))
-    button25 = Button(root, text=" ", font=("Cambria, 20"), height=3, width=7, bg="SystemButtonFace", command=lambda: buttonClicked(button25))
-
+    button1 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button1),
+    )
+    button2 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button2),
+    )
+    button3 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button3),
+    )
+    button4 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button4),
+    )
+    button5 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button5),
+    )
+    button6 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button6),
+    )
+    button7 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button7),
+    )
+    button8 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button8),
+    )
+    button9 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button9),
+    )
+    button10 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button10),
+    )
+    button11 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button11),
+    )
+    button12 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button12),
+    )
+    button13 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button13),
+    )
+    button14 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button14),
+    )
+    button15 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button15),
+    )
+    button16 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button16),
+    )
+    button17 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button17),
+    )
+    button18 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button18),
+    )
+    button19 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button19),
+    )
+    button20 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button20),
+    )
+    button21 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button21),
+    )
+    button22 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button22),
+    )
+    button23 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button23),
+    )
+    button24 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button24),
+    )
+    button25 = Button(
+        root,
+        text=" ",
+        font=("Cambria, 20"),
+        height=3,
+        width=7,
+        bg="SystemButtonFace",
+        command=lambda: buttonClicked(button25),
+    )
 
     button1.grid(row=0, column=0)
     button2.grid(row=0, column=1)
@@ -509,9 +708,10 @@ def start():
     button24.grid(row=4, column=3)
     button25.grid(row=4, column=4)
 
+
 gameMenu = Menu(root)
 root.config(menu=gameMenu)
-optionMenu = Menu(gameMenu,tearoff=False)
+optionMenu = Menu(gameMenu, tearoff=False)
 gameMenu.add_cascade(label="Options", menu=optionMenu)
 optionMenu.add_command(label="Restart Game", command=start)
 start()
