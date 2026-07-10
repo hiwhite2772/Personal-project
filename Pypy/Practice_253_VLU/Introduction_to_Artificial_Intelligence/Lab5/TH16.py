@@ -86,20 +86,6 @@ def checkWinner():
         disableButtons()
         start()
     elif (
-        button5["text"] == "X"
-        and button6["text"] == "X"
-        and button7["text"] == "X"
-        and button8["text"] == "X"
-    ):
-        button5.config(bg="#80ffaa")
-        button6.config(bg="#80ffaa")
-        button7.config(bg="#80ffaa")
-        button8.config(bg="#80ffaa")
-        win = True
-        messagebox.showinfo("OX Game", "Player 1 WINNER!!")
-        disableButtons()
-        start()
-    elif (
         button1["text"] == "X"
         and button5["text"] == "X"
         and button9["text"] == "X"
@@ -236,20 +222,6 @@ def checkWinner():
         button14.config(bg="#80ffaa")
         button15.config(bg="#80ffaa")
         button16.config(bg="#80ffaa")
-        win = True
-        messagebox.showinfo("OX Game", "Player 2 WINNER!!")
-        disableButtons()
-        start()
-    elif (
-        button5["text"] == "O"
-        and button6["text"] == "O"
-        and button7["text"] == "O"
-        and button8["text"] == "O"
-    ):
-        button5.config(bg="#80ffaa")
-        button6.config(bg="#80ffaa")
-        button7.config(bg="#80ffaa")
-        button8.config(bg="#80ffaa")
         win = True
         messagebox.showinfo("OX Game", "Player 2 WINNER!!")
         disableButtons()
