@@ -1,0 +1,40 @@
+# ============================================
+# C# / Visual Studio - .gitignore
+# Author: Mr.White
+# ============================================
+
+# Visual Studio cache / user settings
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# Debug / Release output
+Debug/
+Release/
+x64/
+x86/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# NuGet generated packages
+packages/
+*.nupkg
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE khác (nếu có)
+.idea/
+.vscode/
